@@ -1,0 +1,39 @@
+*{
+
+}
+#wrap {
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    background-color: grey;
+}
+
+p {
+    display: inline;
+    font-size: 50px;
+    background-color: red;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+}
+
+.guessWord {
+
+}
+
+.alphabets {
+    margin-top: -500px;
+    margin-left: 90px;
+    background-color: silver;
+    border: 2px solid red;
+    width: 320px;
+    height: 280px;
+}
+
+.letterBtn {
+    /*display: block;*/
+    padding: 20px;
+}
+
