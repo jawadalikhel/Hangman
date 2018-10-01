@@ -76,18 +76,15 @@ const wordArray = () =>{
     }
 
 
-
-
-
-    const keyboard = () =>{
-        $('.letterBtn').on('click', (e) =>{
-            
-        })
-    }
-    keyboard();
-
 }
 wordArray();
+
+const keyboard = () =>{
+    $('.letterBtn').on('click', (e) =>{
+        console.log('btn working')
+    })
+}
+keyboard();
 
 
 
