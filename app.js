@@ -75,17 +75,20 @@ const wordArray = () =>{
         $('p').text(random);
     }
 
+
+
+
+
+    const keyboard = () =>{
+        $('.letterBtn').on('click', (e) =>{
+            
+        })
+    }
+    keyboard();
+
 }
 wordArray();
 
-
-// const keyboard = () =>{
-//     $('.letterBtn').on('click', () =>{
-//         let $input = $('input').val();
-//         console.log($input);
-//     })
-// }
-// keyboard();
 
 
 
