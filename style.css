@@ -18,18 +18,26 @@ p {
     background-color: blue;
     color: white;
 }
-
-.guessWord {
-
-}
-
 .alphabets {
     margin-top: -500px;
     margin-left: 90px;
     background-color: silver;
     border: 2px solid red;
     width: 320px;
-    height: 280px;
+    height: 370px;
+}
+
+.letterBtn{
+
+}
+
+.letterBtn {
+    color: white;
+    background-color: blue;
+    margin: 1px;
+    width: 10px;
+    display: inline-block;
+
 }
 
 .letterBtn {

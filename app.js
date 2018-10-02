@@ -46,30 +46,43 @@
 // dog();
 
 
-
+let holdWord = [];
+var answerArray = [];
 const wordArray = () =>{
     ///// CLICK THE BUTTON TO GET A RANDOM WORD
     //// FROM ARRAY
+    //// holdWord creats empty array to hold the random word
+    
 
     const words = ['cat','dog','tiger','drink','cannon','eight','plane'];
 
+
+
     const random = words[Math.floor((Math.random() * words.length ))];
-    let newArray = random.split("");
+    //// pushing the random word to holdWord and then split it
+    holdWord = random.split('');
+    // compareInput(holdWord);
+    // console.log(holdWord);
+
+
+
+
         //console.log(random);
     $('.button').on('click', () =>{
         displayWord(random);
        
-        $('p').text(newArray);
+        // $('p').text(newArray);
         //console.log(newArray);
-
-        for(let i = 0; i < newArray.length; i++){
-             $('.guessWord').append('<p class="'+ newArray[i] + ' "> '+"_"+' </p>');
-            
+        console.log(holdWord);
+        for(let i = 0; i < holdWord.length; i++){
+             // $('.guessWord').append('<p class="'+ holdWord[i] + ' "> '+"_"+' </p>');
+             answerArray[i] = '_';
+             $('.guessWord').append('<p class = "'+ holdWord[i] + ' "> '+ answerArray[i] + '</p>');
         }
-
-        // console.log(newArray);
-
     });
+
+
+
     ////////DISPLAY THE RANDOM WORD
     const displayWord = (random) =>{
         $('p').text(random);
@@ -79,14 +92,38 @@ const wordArray = () =>{
 }
 wordArray();
 
+
+let holdLetter = [];
 const keyboard = () =>{
-    $('.letterBtn').on('click', (e) =>{
-        console.log('btn working')
-    })
+    $('.letterBtn').on('click', function(){
+
+        var buttonPressed = $(this).html();
+        // console.log(buttonPressed);
+        compareInput(buttonPressed);
+    });
 }
 keyboard();
 
 
+const compareInput = (buttonPressed) =>{
+    // console.log(newArray);
+    // console.log(buttonPressed);
+    // console.log(holdWord);
+    for(let i = 0; i < holdWord.length; i++){
+            
+        if(buttonPressed === holdWord[i]){
+            answerArray[i] = holdWord[i];
+            $('.guessWord').append(answerArray[i]);
+
+            // console.log('letter is in word');
+        }else {
+            // console.log('try again');
+        }
+
+        console.log(answerArray);
+    }
+
+}
 
 
 
