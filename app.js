@@ -47,7 +47,9 @@
 
 
 let holdWord = [];
-var answerArray = [];
+let answerArray = [];
+let holdLetter = [];
+
 const wordArray = () =>{
     ///// CLICK THE BUTTON TO GET A RANDOM WORD
     //// FROM ARRAY
@@ -63,10 +65,6 @@ const wordArray = () =>{
     holdWord = random.split('');
     // compareInput(holdWord);
     // console.log(holdWord);
-
-
-
-
         //console.log(random);
     $('.button').on('click', () =>{
         displayWord(random);
@@ -77,26 +75,21 @@ const wordArray = () =>{
         for(let i = 0; i < holdWord.length; i++){
              // $('.guessWord').append('<p class="'+ holdWord[i] + ' "> '+"_"+' </p>');
              answerArray[i] = '_';
+             //// ??????????????????
              $('.guessWord').append('<p class = "'+ holdWord[i] + ' "> '+ answerArray[i] + '</p>');
         }
     });
-
-
-
     ////////DISPLAY THE RANDOM WORD
     const displayWord = (random) =>{
         $('p').text(random);
     }
-
-
 }
 wordArray();
 
 
-let holdLetter = [];
 const keyboard = () =>{
     $('.letterBtn').on('click', function(){
-
+        ////// ????????????????
         var buttonPressed = $(this).html();
         // console.log(buttonPressed);
         compareInput(buttonPressed);
@@ -110,17 +103,21 @@ const compareInput = (buttonPressed) =>{
     // console.log(buttonPressed);
     // console.log(holdWord);
     for(let i = 0; i < holdWord.length; i++){
-            
+           // console.log(buttonPressed);
+           //  console.log(holdWord[i]);
+           //  console.log(answerArray[i]);
+           //  console.log(answerArray);
         if(buttonPressed === holdWord[i]){
-            answerArray[i] = holdWord[i];
-            $('.guessWord').append(answerArray[i]);
+            // answerArray[i] = holdWord[i];
+            ////// ???????????????
+            $('.' + buttonPressed).text(buttonPressed);
+
+
 
             // console.log('letter is in word');
         }else {
-            // console.log('try again');
+            console.log('try again');
         }
-
-        console.log(answerArray);
     }
 
 }
