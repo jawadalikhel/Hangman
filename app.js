@@ -1,6 +1,7 @@
 let holdWord = [];
-let answerArray = [];
+var underscore = [];
 let holdLetter = [];
+var rightWord = [];
 
 const wordArray = () =>{
     ///// CLICK THE BUTTON TO GET A RANDOM WORD
@@ -26,13 +27,18 @@ const wordArray = () =>{
         // console.log(holdWord);
         for(let i = 0; i < holdWord.length; i++){
              // $('.guessWord').append('<p class="'+ holdWord[i] + ' "> '+"_"+' </p>');
-             answerArray[i] = ('_');
+             underscore[i] = ('_');
              // OR
              // answerArray.push('_');
+             
+
              //// ??????????????????
-             $('.guessWord').append('<p class = "'+ holdWord[i] + ' "> '+ answerArray[i] + '</p>');
+             $('.guessWord').append('<p class = "'+ holdWord[i] + ' "> '+ underscore[i] + '</p>');
         }
+        console.log(holdWord);
+        console.log(underscore);
     });
+
     ////////DISPLAY THE RANDOM WORD
     // const displayWord = (random) =>{
     //     $('p').text(random);
@@ -54,40 +60,52 @@ const keyboard = () =>{
 keyboard();
 
 
-var tries = 7;
-var winner = []
 
+var tries = 8;
 const compareInput = (buttonPressed, event) =>{
-    // console.log(newArray);
-    // console.log(buttonPressed);
-    // console.log(holdWord);
+
+    
+
     for(let i = 0; i < holdWord.length; i++){
            // console.log(buttonPressed);
            //  console.log(holdWord[i]);
            //  console.log(answerArray[i]);
            //  console.log(answerArray); 
 
-
        if(buttonPressed === holdWord[i]){
             // answerArray[i] = holdWord[i];
-
             ////// ???????????????
            var holdPressBtn = $('.' + buttonPressed).text(buttonPressed);
-           console.log(holdPressBtn);
-            // alert('right answer');
-            winner[i]++;
-            
+           //// holdWord has the random word
+           // console.log(holdWord);
 
-            // console.log('letter is in word');
+           //// hold the char of the word
+           // console.log(holdWord[i]);
+
+           //// hold the char of the word
+           // console.log(buttonPressed);
+           // console.log(holdPressBtn[i])
+           rightWord.push(holdWord[i]);
+           if(rightWord.length === holdWord.length){
+                $('body').append('<div class = compare></div>');
+                $('.compare').text('You Survived');
+            }
         }
   
     }
 
 
 
+
+    // if(rightWord === holdWord){
+    //     console.log('winnnnnner')
+    // }
+
+
+
     //// if answerArray does not include the buttonPress
     //// then decremeant the tries 
-    if(!answerArray.includes(holdPressBtn)) {
+    if(!underscore.includes(holdPressBtn)) {
         tries--;
     }
     ///// if the tries reached zero then print You dead
@@ -97,8 +115,11 @@ const compareInput = (buttonPressed, event) =>{
         $('.noMoreTries').text('You Dead!!!!!!');
     }
 
-
 }
+
+
+
+
 
 
 

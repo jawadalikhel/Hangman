@@ -2,12 +2,12 @@
 body, html {
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    background: url('https://img00.deviantart.net/70ca/i/2010/066/f/0/tragedy_wallpaper_updated_by_hrcm.jpg');
-    height: 100%; 
-    https://img00.deviantart.net/70ca/i/2010/066/f/0/tragedy_wallpaper_updated_by_hrcm.jpg
+/*    background: url('https://img00.deviantart.net/70ca/i/2010/066/f/0/tragedy_wallpaper_updated_by_hrcm.jpg');
+*/    height: 100%; 
 
-
-
+    /*background: url('https://images.pexels.com/photos/1292344/pexels-photo-1292344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');*/
+    
+    background: url('https://i.imgur.com/f2pjJsx.jpg');
 /*    https://i.imgur.com/f2pjJsx.jpg
 */
 
@@ -19,30 +19,27 @@ body, html {
 
 }
 
-#startGAme {
-    width: 300px;
-    height: 60px;
-    font-size: 50px;
-}
 
 p {
     display: inline;
     font-size: 100px;
     letter-spacing: 100px;
-    color: red;
+    text-decoration: none;
 }
 
 .button {
     width: 500px;
     height: 100px;
     font-size: 100px;
-    background-color: #1B3844;
-    color: darkred;
+    background: transparent;
+    color: black;
+    text-decoration: none;
+    border: none;
 }
 .alphabets {
     /*margin-top: 175px;*/
     margin-left: 5px;
-    margin-top: 300px;
+    margin-top: 650px;
     width: 700px;
     height: 350px;
 /*    margin: 25px;
@@ -51,32 +48,29 @@ p {
 
     cursor: pointer;
 
-    text-shadow: 20px 10px 50px red, 10px 10px 30px silver;
+    text-shadow: 20px 10px 50px grey, 10px 10px 30px grey;
     
 }
 
 
 .letterBtn {
-
-
     font-size: 50px;
     display: inline-block;
-    padding: 17px;
-    color: white;
+    padding: 170px;
+    color: grey;
     width: 45px;
     height: 45px;
-    margin-bottom: 5px;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     -webkit-transition-duration: 0.5s;
     transition-duration: 1.2s;
-    color: red;
+    font-weight: bold;
     text-transform: uppercase;
 
 }
 
 .letterBtn:hover {
-    font-size: 100px;
+    font-size: 80px;
     cursor: pointer;
     color: red; 
 }
@@ -92,18 +86,6 @@ p {
 
 
 
-div .noMoreTries {
-  color: red;
-  text-align: center;
-  font-size: 200px;
-  letter-spacing: -7px;
-  font-weight: 700;
-  
-
-}
-
-
-
 
 /* Standard syntax */
 @keyframes example {
@@ -113,7 +95,7 @@ div .noMoreTries {
 
 .noMoreTries {
     margin-left: 670px;
-    margin-top: -450px;
+    margin-top: -600px;
     animation: blur .75s ease-out infinite;
     text-shadow: 50px 50px 50px red, 10px 10px 30px #fff;
     width: 700px;
@@ -126,8 +108,18 @@ div .noMoreTries {
 }
 
 
-.winner{
-    font-size: 300px;
+.compare{
+    margin-left: 670px;
+    margin-top: -450px;
+    animation: blur .75s ease-out infinite;
+    text-shadow: 50px 50px 50px red, 10px 10px 30px #fff;
+    width: 700px;
+    height: 30px;
+    font-size: 200px;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1s;
 }
 
 
