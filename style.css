@@ -1,9 +1,9 @@
 
 body, html {
-    font-family: 'Raleway', sans-serif;
+    /*ont-family: 'Raleway', sans-serif;
     text-align: center;
-/*    background: url('https://img00.deviantart.net/70ca/i/2010/066/f/0/tragedy_wallpaper_updated_by_hrcm.jpg');
-*/    height: 100%; 
+    background: url('https://img00.deviantart.net/70ca/i/2010/066/f/0/tragedy_wallpaper_updated_by_hrcm.jpg');
+    height: 100%; */
 
     /*background: url('https://images.pexels.com/photos/1292344/pexels-photo-1292344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');*/
     
@@ -11,11 +11,19 @@ body, html {
 /*    https://i.imgur.com/f2pjJsx.jpg
 */
 
+
+
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
-    padding: 0;
+/*    margin: 0;
+    padding: 0;*/
 
 }
 
@@ -25,30 +33,38 @@ p {
     font-size: 100px;
     letter-spacing: 100px;
     text-decoration: none;
+
+    
 }
 
 .button {
+    background-color: red;
     width: 500px;
     height: 100px;
     font-size: 100px;
     background: transparent;
     color: black;
-    text-decoration: none;
     border: none;
+    margin-left: 600px;
 }
 .alphabets {
-    /*margin-top: 175px;*/
-    margin-left: 5px;
-    margin-top: 650px;
-    width: 700px;
+     width: 650px;
     height: 350px;
-/*    margin: 25px;
-*/    /*padding: 25px;*/
+    /*margin: 25px;
+    padding: 25px;*/
     text-align: center;
 
     cursor: pointer;
+    padding: 0px;
 
     text-shadow: 20px 10px 50px grey, 10px 10px 30px grey;
+    margin-top: 540px;
+
+    position:fixed;
+    top:0px;
+    bottom: 0px;
+    left:0;
+    right:0;
     
 }
 
@@ -56,7 +72,6 @@ p {
 .letterBtn {
     font-size: 50px;
     display: inline-block;
-    padding: 170px;
     color: grey;
     width: 45px;
     height: 45px;
@@ -72,7 +87,7 @@ p {
 .letterBtn:hover {
     font-size: 80px;
     cursor: pointer;
-    color: red; 
+    color: black; 
 }
 
 
@@ -95,7 +110,7 @@ p {
 
 .noMoreTries {
     margin-left: 670px;
-    margin-top: -600px;
+    margin-top: -50px;
     animation: blur .75s ease-out infinite;
     text-shadow: 50px 50px 50px red, 10px 10px 30px #fff;
     width: 700px;
@@ -109,17 +124,38 @@ p {
 
 
 .compare{
-    margin-left: 670px;
+    /*margin-left: 670px;
     margin-top: -450px;
     animation: blur .75s ease-out infinite;
     text-shadow: 50px 50px 50px red, 10px 10px 30px #fff;
     width: 700px;
     height: 30px;
     font-size: 200px;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 4s; 
     animation-name: example;
-    animation-duration: 1s;
+    animation-duration: 1s;*/
+
+    
+}
+
+
+.submit {
+    margin-right: 1390px;
+    height: 55px;
+    float: right;
+    margin-top: -55px;
+}
+
+.inputName {
+    margin-right: 1400px;
+    height: 50px;
+} 
+
+
+.name {
+    color: red;
+    background-color: blue;
 }
 
 

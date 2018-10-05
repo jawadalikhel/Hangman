@@ -61,7 +61,7 @@ keyboard();
 
 
 
-var tries = 8;
+var tries = 2;
 const compareInput = (buttonPressed, event) =>{
 
     
@@ -88,7 +88,7 @@ const compareInput = (buttonPressed, event) =>{
            rightWord.push(holdWord[i]);
            if(rightWord.length === holdWord.length){
                 $('body').append('<div class = compare></div>');
-                $('.compare').text('You Survived');
+                $('.compare').text('You Win!!!')
             }
         }
   
@@ -110,16 +110,14 @@ const compareInput = (buttonPressed, event) =>{
     }
     ///// if the tries reached zero then print You dead
     if(tries === 0){
-        console.log('ran out of tries');
+        // console.log('ran out of tries');
         $('body').append('<div class = noMoreTries></div>');
-        $('.noMoreTries').text('You Dead!!!!!!');
+        // $('.noMoreTries').text('You Dead!!!!!!');
+
+        $('.noMoreTries').append('<img src="1-01.png" width="900" height="700" alt="Test Image" color = "red" />');
     }
 
 }
-
-
-
-
 
 
 
