@@ -7,8 +7,6 @@ const wordArray = () =>{
     ///// CLICK THE BUTTON TO GET A RANDOM WORD
     //// FROM ARRAY
     //// holdWord creats empty array to hold the random word
-    
-
     const words = ['cat','dog','tiger','drink','cannon','eight','plane'];
 
 
@@ -26,13 +24,11 @@ const wordArray = () =>{
         //console.log(newArray);
         // console.log(holdWord);
         for(let i = 0; i < holdWord.length; i++){
-             // $('.guessWord').append('<p class="'+ holdWord[i] + ' "> '+"_"+' </p>');
              underscore[i] = ('_');
              // OR
              // answerArray.push('_');
              
 
-             //// ??????????????????
              $('.guessWord').append('<p class = "'+ holdWord[i] + ' "> '+ underscore[i] + '</p>');
         }
         console.log(holdWord);
@@ -61,7 +57,7 @@ keyboard();
 
 
 
-var tries = 2;
+var tries = 8;
 const compareInput = (buttonPressed, event) =>{
 
     
@@ -118,76 +114,6 @@ const compareInput = (buttonPressed, event) =>{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////
-
-// $(document).ready(function(){
-
-//     ////  words array holds all the words
-//     const words = ['cat','dog','tiger','drink','cannon','eight','plane'];
-//     ////get a random word from the array and assign it to random
-//     const random = words[Math.floor((Math.random() * words.length ))];
-//     //// split the random word and assign it to holdWord
-//     holdWord = random.split('');
-//     console.log(holdWord);
-
-//     //// Keyboard buttons click function
-//     var wrongGuesses = 0;
-//     $('.letterBtn').on('click', () =>{
-//         $(this).addClass('used');
-//         ///// ??????????????????
-//         $(this).prop('disabled','true');
-//          var matchFound = false;
-
-
-//          //// check if clicked letter is in secret word
-//          var userGuess = $(this).text();
-//          for(var i = 0; i < random.length; i++){
-//             if(userGuess === random[i]){
-
-//             $('#container').find(":nth-child(" + (i + 1) )
-//             ////// ???????????????
-//             $('.' + buttonPressed).text(buttonPressed);
-
-//         }
-//          }
-
-//     });
-
-
-// });
-
 
 
 
