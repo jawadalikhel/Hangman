@@ -1,40 +1,23 @@
 
 body, html {
-    /*ont-family: 'Raleway', sans-serif;
-    text-align: center;
-    background: url('https://img00.deviantart.net/70ca/i/2010/066/f/0/tragedy_wallpaper_updated_by_hrcm.jpg');
-    height: 100%; */
-
     /*background: url('https://images.pexels.com/photos/1292344/pexels-photo-1292344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');*/
-    
     background: url('https://i.imgur.com/f2pjJsx.jpg');
-/*    https://i.imgur.com/f2pjJsx.jpg
-*/
-
-
-
+    /*https://i.imgur.com/f2pjJsx.jpg*/
     position:fixed;
     top:0;
     bottom:0;
     left:0;
     right:0;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-/*    margin: 0;
-    padding: 0;*/
-
+    overflow: hidden;
 }
-
-
 p {
     display: inline;
     font-size: 100px;
     letter-spacing: 100px;
     text-decoration: none;
-
-    
 }
 
 .button {
@@ -50,13 +33,9 @@ p {
 .alphabets {
      width: 650px;
     height: 350px;
-    /*margin: 25px;
-    padding: 25px;*/
     text-align: center;
-
     cursor: pointer;
     padding: 0px;
-
     text-shadow: 20px 10px 50px grey, 10px 10px 30px grey;
     margin-top: 540px;
     color: silver;
@@ -65,7 +44,7 @@ p {
     bottom: 0px;
     left:0;
     right:0;
-    
+
 }
 
 
@@ -86,21 +65,12 @@ p {
 .letterBtn:hover {
     font-size: 80px;
     cursor: pointer;
-    color: black; 
+    color: black;
 }
-
-
-
-
 
 .letterBtn {
-    /*display: block;*/
     padding: 20px;
 }
-
-
-
-
 /* Standard syntax */
 @keyframes example {
     from {color: red;}
@@ -113,8 +83,6 @@ p {
     text-align: center;
 }
 
-
-
 .noMoreTries {
     margin-left: 670px;
     margin-top: -50px;
@@ -124,11 +92,10 @@ p {
     height: 30px;
     font-size: 200px;
     -webkit-animation-name: example;
-    -webkit-animation-duration: 4s; 
+    -webkit-animation-duration: 4s;
     animation-name: example;
     animation-duration: 4s;
 }
-
 
 .compare{
     margin-left: 700px;
@@ -139,7 +106,7 @@ p {
     height: 30px;
     font-size: 200px;
     -webkit-animation-name: example;
-    -webkit-animation-duration: 4s; 
+    -webkit-animation-duration: 4s;
     animation-name: example;
     animation-duration: 1s;
 
@@ -157,16 +124,17 @@ p {
 .inputName {
     margin-right: 1400px;
     height: 50px;
-} 
+}
 
 
 .goHome {
-    color: white;
-    font-size: 100px;
-    border: 2px solid red;
+    color: silver;
+    font-size: 50px;
+    /* border: 2px solid red; */
     text-decoration: none;
-    background-color: silver;
-    color: black;
+    /* background-color: grey; */
+    text-shadow: 500px 500px 500px grey, 10px 10px 30px #fff;
+
 }
 
 .goHome: hover{
@@ -178,7 +146,7 @@ p {
     animation: blur .75s ease-out infinite;
     text-shadow: 50px 50px 50px red, 10px 10px 30px #fff;
     -webkit-animation-name: example;
-    -webkit-animation-duration: 4s; 
+    -webkit-animation-duration: 4s;
     animation-name: example;
     animation-duration: 1s;
 
@@ -205,27 +173,3 @@ p {
 .info {
     font-size: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

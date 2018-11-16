@@ -9,8 +9,7 @@ const wordArray = () =>{
     //// holdWord creats empty array to hold the random word
     const words = ['cat','dog','tiger','drink','cannon','eight','plane'];
 
-
-
+    //// to generate a random word from array words
     const random = words[Math.floor(Math.random() * words.length )];
     //// pushing the random word to holdWord and then split it
     holdWord = random.split('');
@@ -28,25 +27,20 @@ const wordArray = () =>{
              // OR
              // answerArray.push('_');
              
-
+             ////
              $('.guessWord').append('<p class = "'+ holdWord[i] + ' "> '+ underscore[i] + '</p>');
         }
         console.log(holdWord);
         console.log(underscore);
     });
-
-    ////////DISPLAY THE RANDOM WORD
-    // const displayWord = (random) =>{
-    //     $('p').text(random);
-    // }
 }
 wordArray();
 
 const keyboard = () =>{
-
+    //// making the alpabeth buttons clicable
     $('.letterBtn').on('click', function(){
 
-        ////// ????????????????
+        ////// when user press button it stores it in buttonPress
         var buttonPressed = $(this).html();
         // console.log(buttonPressed);
         compareInput(buttonPressed);
@@ -58,16 +52,17 @@ keyboard();
 
 
 var tries = 8;
-const compareInput = (buttonPressed, event) =>{
+const compareInput = (buttonPressed) =>{
 
     
-
+    //// use for loop to go throw the right word
+    //// check if the button press equals to the element
+    //// of the right word
     for(let i = 0; i < holdWord.length; i++){
            // console.log(buttonPressed);
            //  console.log(holdWord[i]);
            //  console.log(answerArray[i]);
            //  console.log(answerArray); 
-
        if(buttonPressed === holdWord[i]){
             // answerArray[i] = holdWord[i];
             ////// ???????????????
@@ -89,14 +84,6 @@ const compareInput = (buttonPressed, event) =>{
         }
   
     }
-
-
-
-
-    // if(rightWord === holdWord){
-    //     console.log('winnnnnner')
-    // }
-
 
 
     //// if answerArray does not include the buttonPress
